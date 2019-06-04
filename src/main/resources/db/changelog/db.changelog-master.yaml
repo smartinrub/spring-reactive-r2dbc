@@ -27,4 +27,34 @@ databaseChangeLog:
             columns:
               - column:
                   name: name
-                  value: Malaga Palacios
+                  value: AC Hotel Malaga Palacio
+        - insert:
+            tableName: HOTEL
+            columns:
+              - column:
+                  name: name
+                  value: IBIS Malaga Centro
+        - insert:
+            tableName: HOTEL
+            columns:
+              - column:
+                  name: name
+                  value: Barcelo Malaga
+        - insert:
+            tableName: HOTEL
+            columns:
+              - column:
+                  name: name
+                  value: Malaga Hotel Picasso
+        - insert:
+            tableName: HOTEL
+            columns:
+              - column:
+                  name: name
+                  value: Molina Larios
+        - insert:
+            tableName: HOTEL
+            columns:
+              - column:
+                  name: name
+                  value: Vincci Malaga
