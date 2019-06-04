@@ -6,6 +6,6 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 class Hotel {
-    private final int id;
+    private final Long id;
     private final String name;
 }

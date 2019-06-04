@@ -25,14 +25,14 @@ public class HotelRouterTest {
     @Test
     public void getAllHotelsShouldReturnAStreamOfHotels() {
 
-        when(hotelRepository.findAll()).thenReturn(Flux.just(new Hotel(1, "Malaga Palacios")));
+        when(hotelRepository.findAll()).thenReturn(Flux.just(new Hotel(1L, "Malaga Palacios")));
 
         webTestClient
                 .get().uri("/hotels")
-                .accept(MediaType.APPLICATION_JSON_UTF8)
+                .accept(MediaType.APPLICATION_JSON)
                 .exchange()
                 .expectStatus().isOk()
-                .expectHeader().contentType(MediaType.APPLICATION_JSON_UTF8)
+                .expectHeader().contentType(MediaType.APPLICATION_JSON)
                 .expectBody()
                     .jsonPath("@.[0].id").isEqualTo("1")
                     .jsonPath("@.[0].name").isEqualTo("Malaga Palacios");
