@@ -10,8 +10,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.reactive.server.WebTestClient;
 import reactor.core.publisher.Flux;
 
-import static com.sergiomartinrubio.springreactiver2dbc.SpringReactiveR2dbcApplication.*;
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.when;
 
 @WebFluxTest
 @RunWith(SpringRunner.class)
