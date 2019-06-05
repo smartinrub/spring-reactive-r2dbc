@@ -19,7 +19,6 @@
         <spring-cloud.version>Greenwich.SR1</spring-cloud.version>
         <dist.key>DATAR2DBC</dist.key>
 
-        <spring.framework.version>5.2.0.M2</spring.framework.version>
     </properties>
 
     <dependencies>

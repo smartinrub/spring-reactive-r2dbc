@@ -28,7 +28,7 @@ public class HotelRouterTest {
         when(hotelRepository.findAll()).thenReturn(Flux.just(new Hotel(1L, "Malaga Palacios")));
 
         webTestClient
-                .get().uri("/hotels")
+                .get().uri("/hotel")
                 .accept(MediaType.APPLICATION_JSON)
                 .exchange()
                 .expectStatus().isOk()

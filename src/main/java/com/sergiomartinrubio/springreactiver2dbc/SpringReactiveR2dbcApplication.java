@@ -23,7 +23,9 @@ public class SpringReactiveR2dbcApplication {
 
     @Bean
     RouterFunction<ServerResponse> route() {
+
         return RouterFunctions
-                .route(GET("/hotels"), serverRequest -> ok().body(hotelRepository.findAll(), Hotel.class));
+                .route(GET("/hotel"), serverRequest -> ok().body(hotelRepository.findAll(), Hotel.class));
     }
+
 }
