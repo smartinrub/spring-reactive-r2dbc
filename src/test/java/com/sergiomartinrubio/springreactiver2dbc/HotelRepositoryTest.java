@@ -1,6 +1,5 @@
 package com.sergiomartinrubio.springreactiver2dbc;
 
-import org.h2.message.DbException;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,7 +38,7 @@ class HotelRepositoryTest {
 
         StepVerifier
                 .create(hotelRepository.saveAll(Flux.just(new Hotel(2L, "hotel test 3"))))
-                .expectError(DbException.class)
+                .expectError(RuntimeException.class)
                 .verify();
 
         StepVerifier

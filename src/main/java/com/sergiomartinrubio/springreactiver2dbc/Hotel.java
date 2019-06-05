@@ -3,12 +3,14 @@ package com.sergiomartinrubio.springreactiver2dbc;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import javax.validation.constraints.NotNull;
+import org.springframework.data.annotation.Id;
 
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
 class Hotel {
+
+    @Id
     private Long id;
     private String name;
 }
