@@ -18,4 +18,5 @@ public class DatabaseConfiguration extends AbstractR2dbcConfiguration {
         return new H2ConnectionFactory(H2ConnectionConfiguration.builder().inMemory("testdb").username("sa").build());
     }
 
+
 }
